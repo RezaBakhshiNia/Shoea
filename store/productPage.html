@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/store/src/styles/home.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/store/src/styles/productPage.css" />
+    <script defer src="/store/src/scripts/productPage.js"></script>
+    <title>Loading...</title>
+  </head>
+  <body>
+    <a href="http://127.0.0.1:5500/store/homePage.html" id="backToHome"
+      ><span class="material-symbols-outlined"> arrow_back </span></a
+    >
+    <div class="product" data-set="i">
+      <div class="preview-image">
+        <img
+          src="/store/src/assets/shoe-img/ASICS GEL NIMBUS 25.png"
+          width="480px"
+          height="380px"
+        />
+      </div>
+      <div class="product-details">
+        <div class="top-details">
+          <h1 id="nameOfProduct">Running Sportwear</h1>
+          <div class="heart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C4.53 14.23 2 11.5 2 8.5 2 5.42 4.42 3 7.5 3c1.93 0 3.7 1 4.5 2.5C12.8 4 14.57 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3-2.53 5.73-8.55 11.53L12 21.35z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="bottome-detils">
+          <p class="sold">4,352 sold</p>
+          <div class="star-container">
+            <div class="star-fill"></div>
+          </div>
+          <span class="reviews">4.3 (2,457 reviews)</span>
+        </div>
+      </div>
+      <div class="select-for-buy">
+        <div class="description">
+          <h3>Description</h3>
+          <p id="describe">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+            excepturi vero dolores, qui molestias eius consequatur, est minima
+            blanditiis itaque explicabo voluptatum cum odit odio!
+          </p>
+        </div>
+        <div class="size-color">
+          <div class="size-selecting">
+            <h4>Size</h4>
+            <div class="sizes" onclick="selectSize()">
+              <span class="size">40</span><span class="size">41</span
+              ><span class="size">42</span>
+            </div>
+          </div>
+          <div class="color-selecting">
+            <h4>Color</h4>
+            <div class="colors" onclick="selectColor()">
+              <span class="color"></span>
+              <span class="color"></span>
+              <span class="color"></span>
+              <span class="color"></span>
+            </div>
+          </div>
+        </div>
+        <div class="quantity">
+          <h4>Quantity</h4>
+          <div class="count">
+            <span id="decrement">-</span>
+            <span id="value">1</span>
+            <span id="increment">+</span>
+          </div>
+        </div>
+      </div>
+      <div class="totalPrice-addToCart">
+        <div class="totalPrice">
+          <p>Total price</p>
+          <p class="lastPrice">$<span id="totalPrice"></span>.00</p>
+        </div>
+        <button id="add-to-cart">
+          <span class="material-symbols-outlined"> local_mall </span>
+          <span>Add to Cart</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/landingPage/src/assets/logo.png"
+    />
+    <link rel="stylesheet" href="/landingPage/src/styles/login-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script src="/landingPage/src/logic/jquery-3.7.0.min.js"></script>
+    <script
+      defer
+      type="module"
+      src="/landingPage/src/logic/login-script.js"
+    ></script>
+    <title>Login page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="/landingPage/src/assets/arrow-left-short.png"
+          alt="arrow-left"
+        />
+      </header>
+      <img id="logo" src="/landingPage/src/assets/logo (1).png" alt="logo" />
+      <h1 class="title">Login to Your Account</h1>
+      <div class="form" id="email">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-envelope-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+          />
+        </svg>
+        <p>Email</p>
+        <input class="inputs" type="email" id="input1" />
+      </div>
+      <div class="form" id="password">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-lock-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+          />
+        </svg>
+        <p>Password</p>
+        <input class="inputs" type="password" id="input2" />
+        <span
+          style="display: none"
+          class="material-symbols-outlined visibility-icon"
+          id="visibility-off-icon"
+          >visibility_off</span
+        >
+
+        <span
+          class="material-symbols-outlined visibility-icon"
+          id="visibility-icon"
+          >visibility</span
+        >
+      </div>
+
+      <label class="checkbox-container">
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+        <i id="remember">Remember me</i>
+      </label>
+      <button id="login">Sign In</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/store/src/styles/home.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn-brands").slick({
+          infinite: false,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          variableWidth: true,
+          prevArrow: null,
+          nextArrow: null,
+        });
+      });
+    </script>
+    <script defer type="module" src="/store/src/scripts/app.js"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <header id="header">
+        <div id="user">
+          <img src="/store/src/assets/images/profile-image.png" alt="disc" />
+          <div class="greeting">
+            <span id="greeting">Good Morning 👋</span>
+            <span id="user-name">Reza Bakhshi Nia</span>
+          </div>
+        </div>
+        <div class="bell-like">
+          <img src="/store/src/assets/icons/bell.svg" alt="bell" />
+          <a href="http://127.0.0.1:5500/store/wishlist.html"
+            ><img src="/store/src/assets/icons/heart.svg" alt=""
+          /></a>
+        </div>
+      </header>
+      <div class="search-products">
+        <div id="search-box">
+          <img
+            src="/store/src/assets/icons/input-search.png"
+            alt="search icon"
+          />
+
+          <input id="search-input" type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="brands-icon">
+        <div class="brand">
+          <img src="/store/src/assets/logo/nike.png" alt="nike" />
+          <p>Nike</p>
+        </div>
+        <div class="brand">
+          <img src="/store/src/assets/logo/adidas.png" alt="adidas" />
+          <p>Adidas</p>
+        </div>
+        <div class="brand">
+          <img src="/store/src/assets/logo/puma.png" alt="puma" />
+          <p>Puma</p>
+        </div>
+        <div class="brand">
+          <img src="/store/src/assets/logo/asics.png" alt="asics" />
+          <p>Asics</p>
+        </div>
+        <div class="brand">
+          <img src="/store/src/assets/logo/reebok.png" alt="reebok" />
+          <p>Reebok</p>
+        </div>
+        <div class="brand">
+          <img src="/store/src/assets/logo/NewBay.png" alt="NewBay" />
+          <p>NewBa...</p>
+        </div>
+        <div class="brand">
+          <img src="/store/src/assets/logo/consverse.png" alt="consverse" />
+          <p>Consverse</p>
+        </div>
+        <div class="brand">
+          <img src="/store/src/assets/logo/more.png" alt="more" />
+          <p>More</p>
+        </div>
+      </div>
+      <div class="headTitles">
+        <h1 id="most-popular">Most Popular</h1>
+        <button id="seeAll">See All</button>
+      </div>
+      <div id="btn-brands-container" style="max-width: 380px">
+        <div id="btn-brands">
+          <button onclick="window.location.reload">All</button>
+          <button value="nike">Nike</button>
+          <button value="adidas">Adidas</button>
+          <button value="puma">Puma</button>
+          <button value="asics">Asics</button>
+          <button value="reebok">Reebok</button>
+          <button value="new balance">NewBalance</button>
+          <button value="converse">Consverse</button>
+        </div>
+      </div>
+      <section class="products"></section>
+      <section class="other-pages">
+        <div class="other-pages-layout Home">
+          <img src="/store/src/assets/icons/home.png" alt="Home" />
+          <span class="other-pages-titles">Home</span>
+        </div>
+        <div class="other-pages-layout Cart">
+          <img src="/store/src/assets/icons/cart2.png" alt="Cart" />
+          <span class="other-pages-titles">Cart</span>
+        </div>
+        <div class="other-pages-layout Orders">
+          <img src="/store/src/assets/icons/bag.png" alt="Bag" />
+          <span class="other-pages-titles">Orders</span>
+        </div>
+        <div class="other-pages-layout Wallet">
+          <img src="/store/src/assets/icons/wallet2.png" alt="Wallet" />
+          <span class="other-pages-titles">Wallet</span>
+        </div>
+        <div class="other-pages-layout Profile">
+          <img src="/store/src/assets/icons/profile.png" alt="profile" />
+          <span class="other-pages-titles">Profile</span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

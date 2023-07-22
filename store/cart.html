@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/store/src/styles/cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js"></script>
+    <script defer src="/store/src/scripts/cart.js"></script>
+
+    <title>Cart</title>
+  </head>
+  <body>
+    <div class="orderContainer">
+      <div class="search-for-order">
+        <div class="backToMain">
+          <img
+            width="15px"
+            src="/landingPage/src/assets/logo (1).png"
+            alt="shoea"
+          /><span class="close-modal"> My Cart </span>
+        </div>
+        <div class="input-box">
+          <input id="search-input" type="text" placeholder="Search..." />
+          <span class="search">
+            <span class="material-symbols-outlined"> search </span>
+          </span>
+          <span class="material-symbols-outlined close-icon"> close </span>
+        </div>
+      </div>
+      <div class="order-products">
+        <section class="products">
+          <div class="product">
+            <img
+              class="photo"
+              src="/store/src/assets/shoe-img/Electrify-NITRO-2-Men's-Running-Shoes.jpg"
+              alt="Electrify-NITRO-2-Men's-Running-Shoes"
+            />
+            <div class="details">
+              <div class="top-details">
+                <p class="product-name">Lorem ipsum.</p>
+                <span class="material-symbols-outlined"> delete </span>
+              </div>
+              <div class="mid-details">
+                <span class="color" style="background-color: brown;"></span>
+                <span>|</span>
+                <p class="size">size = <span></span></p>
+              </div>
+              <div class="bott-detils">
+                <p class="price" data-base-pric=""><span>$</span><span>200</span><span>.00</span></p>
+                <div class="count">
+                  <span id="decrement">-</span>
+                  <span id="value">1</span>
+                  <span id="increment">+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              class="photo"
+              src="/store/src/assets/shoe-img/Electrify-NITRO-2-Men's-Running-Shoes.jpg"
+              alt="Electrify-NITRO-2-Men's-Running-Shoes"
+            />
+            <div class="details">
+              <div class="top-details">
+                <p class="product-name">Lorem ipsum.</p>
+                <span class="material-symbols-outlined"> delete </span>
+              </div>
+              <div class="mid-details">
+                <span class="color"></span>
+                <span>|</span>
+                <p class="size">size = <span></span></p>
+              </div>
+              <div class="bott-detils">
+                <p class="price">$250.00</p>
+                <div class="count">
+                  <span id="decrement">-</span>
+                  <span id="value">1</span>
+                  <span id="increment">+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="other-pages">
+      <div class="other-pages-layout Home">
+        <img src="/store/src/assets/icons/home.png" alt="Home" />
+        <span class="other-pages-titles">Home</span>
+      </div>
+      <div class="other-pages-layout Cart">
+        <img src="/store/src/assets/icons/cart2.png" alt="Cart" />
+        <span class="other-pages-titles">Cart</span>
+      </div>
+      <div class="other-pages-layout Orders">
+        <img src="/store/src/assets/icons/bag.png" alt="Bag" />
+        <span class="other-pages-titles">Orders</span>
+      </div>
+      <div class="other-pages-layout Wallet">
+        <img src="/store/src/assets/icons/wallet2.png" alt="Wallet" />
+        <span class="other-pages-titles">Wallet</span>
+      </div>
+      <div class="other-pages-layout Profile">
+        <img src="/store/src/assets/icons/profile.png" alt="profile" />
+        <span class="other-pages-titles">Profile</span>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/store/src/styles/wishlist.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js"></script>
+    <script defer src="/store/src/scripts/wishlist.js"></script>
+    <title>Wishlist</title>
+  </head>
+  <body>
+    <div class="wishlist-container">
+      <div class="search-for-wishlist">
+        <div class="backToMain">
+          <a href="http://127.0.0.1:5500/store/homePage.html"
+            ><span class="material-symbols-outlined"> arrow_back </span> </a
+          ><span class="close-modal"> My Wishlist </span>
+        </div>
+        <div class="input-box">
+          <input id="search-input" type="text" placeholder="Search..." />
+          <span class="search">
+            <span class="material-symbols-outlined"> search </span>
+          </span>
+          <span class="material-symbols-outlined close-icon"> close </span>
+        </div>
+      </div>
+      <div class="brands-wishList-modal">
+        <div id="btn-brands-container" style="max-width: 380px">
+          <div id="btn-brands">
+            <button class="active" onclick="renderWishList()">All</button>
+            <button onclick="renderByBrand(`nike`)">Nike</button>
+            <button onclick="renderByBrand(`adidas`)">Adidas</button>
+            <button onclick="renderByBrand(`puma`)">Puma</button>
+            <button onclick="renderByBrand(`asics`)">Asics</button>
+            <button onclick="renderByBrand(`reebok`)">Reebok</button>
+            <button onclick="renderByBrand(`new balance`)">NewBalance</button>
+            <button onclick="renderByBrand(`converse`)">Consverse</button>
+          </div>
+        </div>
+      </div>
+      <div class="wishList-products">
+        <section class="products">
+          
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
